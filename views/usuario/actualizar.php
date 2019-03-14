@@ -77,7 +77,7 @@ use yii\helpers\ArrayHelper;
                                 'attributes' => [
                                     [
                                         'attribute'=>'Imagen ',
-                                        'value'=>'@web/uploads/'.$model->id_registro.'.png', 
+                                        'value'=>'@web/uploads/'.$model->id_registro.'.'.$model->nombre_foto, 
                                         'format' => ['image',['width'=>'100','height'=>'140']],
                                     ],
                                 ],

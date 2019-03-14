@@ -57,7 +57,7 @@ class Usuario extends \yii\db\ActiveRecord
             [['activo'], 'boolean'],
             [['id_provincia'], 'integer'],
             [['fecha_nac'], 'safe'],           
-            [['foto'], 'file', 'extensions'=>'jpg, gif, png'],
+            [['foto'], 'file', 'extensions'=>'jpg, gif, png,jpeg'],
             [['foto'], 'file', 'maxSize'=>'1000000'],
             [['id_registro'], 'unique'],
             [['id_localidad'], 'exist', 'skipOnError' => true, 'targetClass' => Localidad::className(), 'targetAttribute' => ['id_localidad' => 'id_localidad']],

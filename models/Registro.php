@@ -42,7 +42,8 @@ class Registro extends \yii\db\ActiveRecord
             [['fecha_registro', 'fecha_token'], 'safe'],
             //[['claveRepetida'], 'compare','compareAttribute'=>'clave'],
             [['recuperar_clave'], 'boolean'],
-            [['captcha'], 'captcha']
+            [['captcha'], 'captcha'],
+            [['usuario','email'], 'unique']
         ];
     }
 

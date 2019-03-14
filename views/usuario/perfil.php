@@ -15,7 +15,7 @@ use yii\widgets\DetailView;;
 use yii\helpers\Html;
 use kartik\file\FileInput;
 use yii\widgets\ActiveForm;
-$usuario = \Yii::$app->user->identity;
+//$usuario = \Yii::$app->user->identity;
 ?>
 <h3 align="center" > Datos Personales</h3>
 
@@ -24,7 +24,7 @@ $usuario = \Yii::$app->user->identity;
 <body>
 <div class="col-sm-2" style="background-color:rgb(236, 240, 245);"> 
 
-    <?php if (is_null($usuario) || !($usuario->nombre_foto=='png') || !($usuario->nombre_foto=='jpg') ): ?>
+    <?php if (is_null($modeluser) || (!($modeluser->nombre_foto=='png') && !($modeluser->nombre_foto=='jpg')&& !($modeluser->nombre_foto=='jpeg')) ): ?>
         <?=
         DetailView::widget([
             'model' => $modeluser,

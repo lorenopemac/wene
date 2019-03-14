@@ -235,7 +235,7 @@ class UsuarioController extends \yii\web\Controller
             if ($model->save()) {
                 if (($model->foto)!='' && $model->upload()) {
                     // file is uploaded successfully
-                    //return $this->render('actualizar');
+                    return $this->render('actualizar', ['model' => $model]);
                 }
             }
         }   

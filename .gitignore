@@ -2,3 +2,7 @@
 config/db\.php
 
 npm-debug\.log
+
+web/
+
+config/web\.php
